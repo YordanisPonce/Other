@@ -6,15 +6,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-     <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/custom.css">
 
 </head>
 
 <body>
     <div class="container">
-        <h1 style="text-align: center;color: white;">HOla mundo</h1>
+        <input type="text" name="" id="name">
+        <input type="button" value="Dale!!" id="show">
+        <p id="text"></p>
     </div>
-
+    <script>
+        window.onload = function () {
+            let button = document.getElementById("show");
+            button.addEventListener("click", () => {
+               let name = document.getElementById("name");
+               document.getElementById("text").textContent = `Mi nombre es ${name.value} y estoy aprendiendo git`;
+               name.value = "";
+            });
+        }
+    </script>
 </body>
 
 </html>
