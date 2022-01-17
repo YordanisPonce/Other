@@ -1,10 +1,12 @@
-body{
-    background-color: royalblue;
-}
-.container{
-    width: 400px;
-    height: 400px;
-    padding: 25px;
+.ball {
     margin: auto;
-    background-color: rgba(78, 71, 71, 0.5);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: aquamarine;
+    transition: background-color .5s;
+}
+
+.ball:hover {
+    cursor: pointer;
 }

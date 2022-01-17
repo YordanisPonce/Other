@@ -11,18 +11,14 @@
 </head>
 
 <body>
-    <div class="container">
-        <input type="text" name="" id="name">
-        <input type="button" value="Dale!!" id="show">
-        <p id="text"></p>
+    <div class="ball">
+
     </div>
     <script>
         window.onload = function () {
-            let button = document.getElementById("show");
+            let button = document.querySelector(".ball");
             button.addEventListener("click", () => {
-               let name = document.getElementById("name");
-               document.getElementById("text").textContent = `Mi nombre es ${name.value} y estoy aprendiendo git`;
-               name.value = "";
+                button.style.backgroundColor = "red";
             });
         }
     </script>
